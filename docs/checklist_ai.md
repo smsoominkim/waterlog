@@ -1,0 +1,5 @@
+- [ ] `lib/gemini.ts`: Google Generative AI 클라이언트 설정
+- [ ] `app/api/reports/generate/route.ts`: 리포트 생성 API 구현
+- [ ] `app/api/reports/route.ts`: 리포트 목록 조회 API 구현
+- [ ] `components/report/ReportCard.tsx`: 리포트 카드 UI 구현
+- [ ] `app/reports/page.tsx`: 리포트 페이지 구현
