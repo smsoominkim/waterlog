@@ -5,7 +5,8 @@ export async function DELETE(
     request: Request,
     { params }: { params: Promise<{ id: string }> } // params is a Promise in Next.js 15
 ) {
-    const supabase = await createClient();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const supabase: any = await createClient();
     const {
         data: { user },
     } = await supabase.auth.getUser();

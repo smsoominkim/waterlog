@@ -3,7 +3,8 @@ import { generateWaterReport, WaterLogData } from '@/lib/gemini';
 import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
-    const supabase = await createClient();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const supabase: any = await createClient();
 
     // 1. Check Authentication
     let userId = '';
