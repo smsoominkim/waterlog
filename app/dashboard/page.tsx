@@ -3,7 +3,8 @@ import { redirect } from 'next/navigation';
 import DashboardClient from './client_page';
 
 export default async function DashboardPage() {
-    const supabase = await createClient();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const supabase: any = await createClient();
 
     const {
         data: { user },
